@@ -1,0 +1,2982 @@
+* {
+    font-family: 'Cardo', "Hind", serif;
+
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p,
+h5,
+a,
+button {
+    font-family: 'Hind', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+@font-face {
+    font-family: "sottile";
+    src: url("/public/Font/Shree714.ttc");
+}
+
+
+
+
+header {
+    background-image: url(/public/Header.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+}
+
+
+header p {
+    font-family: sottile;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+header h2 {
+    font-size: clamp(2rem, 5vw, 8rem);
+    color: #ffffff;
+    text-align: center;
+}
+
+.containerFeautured {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.containerFeautured H6 {
+    font-size: 12px;
+    font-family: sottile;
+    font-weight: 600;
+}
+
+.containerFeautured p {
+    font-size: 12px;
+    font-family: 'Cardo', "Hind", serif;
+    letter-spacing: 2px;
+}
+
+
+.logo h1,
+.logoMobile h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.nav2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: solid 0.5px rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 34;
+    background: rgba(0, 0, 0, 0.194);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+}
+
+.logo {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+    margin-top: 0px;
+
+}
+
+
+
+.centroNav {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    border-left: 0.5px rgb(255, 255, 255) solid;
+    border-right: 0.5px rgb(255, 255, 255) solid;
+}
+
+.Boxsocial {
+    flex: 1;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.social svg {
+    margin: 10px;
+    width: 30px;
+    color: #dde1e7;
+    cursor: pointer;
+
+
+
+}
+
+
+
+.upNav {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dde1e7;
+
+}
+
+.upNav input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    width: 150px;
+    transition: all 1s;
+    margin: 0px 10px;
+    color: #dde1e7;
+    border: 0.5px solid rgba(255, 255, 255, 0.395);
+    border-radius: 30px;
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+    padding: 0px 5px;
+
+}
+
+.upNav input:hover {
+
+    width: 200px;
+    transition: all 1s;
+    border: 0.5px solid rgba(255, 255, 255, 0.395);
+    padding: 0px 5px;
+    border-radius: 30px;
+
+
+}
+
+.upNav input::placeholder {
+    color: rgba(255, 255, 255, 0.505);
+    text-align: center;
+    position: relative;
+    left: 6%;
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+
+
+
+
+
+
+}
+
+
+.logoMobileLogin {
+    display: none;
+}
+
+.BoxNavItem {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.navItem svg {
+    display: none;
+
+}
+
+.navItem:hover>svg {
+    display: block;
+
+
+}
+
+.navItem .formHoverAccount {
+    display: none;
+
+
+}
+
+.navItem .formHoverAccount button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navItem:hover>.formHoverAccount {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.navItem span {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+
+.navItem:hover>span {
+    display: none;
+
+}
+
+
+
+.navItem:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+.mioAccount {
+    display: block;
+}
+
+.logoutHover {
+    display: none;
+}
+
+
+
+.acountHover:hover .logoutHover {
+    display: block;
+}
+
+
+.BoxNavItem a:hover {
+    color: white;
+
+}
+
+.BoxNavItem a {
+    color: white;
+    text-decoration: none;
+}
+
+.navItem {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgb(255, 255, 255);
+    height: 100%;
+    color: #dde1e7;
+    border-bottom: 0px solid #dde1e7;
+    border-left: 0px solid #dde1e7;
+    text-align: center;
+    font-family: sottile;
+    font-size: clamp(0.5rem, 1.8vw, 0.8rem);
+    padding: 10px 10px;
+    white-space: nowrap;
+    transition: 0.1s ease-in-out;
+    margin-top: 0px;
+
+}
+
+.navItem span {
+    font-family: sottile;
+}
+
+#navItem {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgb(255, 255, 255);
+    height: 100%;
+    color: #dde1e7;
+    border-bottom: 0px solid #dde1e7;
+    border-left: 0px solid #dde1e7;
+    text-align: center;
+    font-family: sottile;
+    font-size: clamp(0.5rem, 1.8vw, 0.8rem);
+    padding: 10px 10px;
+    white-space: nowrap;
+    transition: 0.1s ease-in-out;
+    margin-top: 0px;
+    position: relative;
+
+
+
+}
+
+.handmadeDropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 49px;
+    background: rgba(0, 0, 0, 0.553);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    width: 100.5%;
+    border: 0.5px solid white;
+    display: none;
+    border-top: none;
+}
+
+.handmadeDropdown a {
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 0.8vw;
+    margin-top: 0px;
+}
+
+.formHoverAccount button {
+    background-color: #ffffff00;
+    border: none;
+    color: white;
+    font-family: sottile;
+    width: 100%;
+    height: 100%;
+}
+
+
+#navItem>a {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    font-family: sottile;
+    white-space: nowrap;
+    color: white;
+
+}
+
+#navItem:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+#navItem:hover .handmadeDropdown {
+    display: flex;
+
+}
+
+#navItemMobile:hover .handmadeDropdownMobile {
+    display: flex;
+
+}
+
+
+
+.handmadeDropdownMobile a {
+    font-size: clamp(0.8rem, 1.1vw, 0.7rem);
+    padding: 10px 10px;
+    margin: 7px 0px;
+    color: rgb(174, 174, 174);
+    height: auto;
+
+
+
+}
+
+.handmadeDropdown a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+#navItem li a {
+    color: black;
+    padding: 0px 1vw;
+    border-bottom: 0.5px black solid;
+    font-size: clamp(0.5rem, 1.8vw, 0.8rem);
+    margin: 0px;
+    width: 50px;
+}
+
+#navItem li {
+    width: 50px;
+}
+
+
+.menuMobile {
+    display: none;
+
+}
+
+.logoMobile {
+    display: none;
+}
+
+.search {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+
+
+
+
+.test {
+    background: white;
+    height: auto;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0px;
+
+}
+
+.containerCard1 {
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    display: flex;
+    ;
+
+
+}
+
+.containerCard2 {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0px 15px;
+}
+
+.cardHomeLarge {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+.cardHomeSmall {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 30px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+
+
+.divImg {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2546a094954923.5e8bb6cfdaf86.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 30px;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.divImg h2 {
+
+    color: white;
+    font-size: clamp(1.6rem, 3vw, 3rem);
+
+}
+
+
+
+.boxCards {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.boxDivImg {
+    width: 40%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+
+    margin: 12.5px 15px;
+    margin-bottom: 0px;
+
+}
+
+.imgCardLarge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-attachment: fixed;
+}
+
+.imgCardLarge {
+
+    height: 45vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.infoCardLarge {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    align-items: start;
+    margin-top: 10px;
+    height: auto;
+
+}
+
+
+
+.infoCardDateLarge {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(94, 94, 94, 0.733);
+
+
+
+}
+
+.infoCardDateLarge p {
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+
+}
+
+.infoCardDateSmall p {
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+
+}
+
+.infoCardLarge h4 {
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    text-align: start;
+    height: auto;
+
+
+
+
+
+}
+
+.infoCardDateSmall h4 {
+    font-size: clamp(1rem, 1.3vw, 1.8rem);
+    font-weight: 800;
+
+}
+
+.infoSmallCard h4 {
+    font-size: clamp(0.8rem, 1.3vw, 1.8rem);
+}
+
+.categoryCard {
+    padding-right: 30px;
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.divHover {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(245, 222, 179, 0);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.divHover:hover {
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+
+
+
+}
+
+
+
+.divHoverSmall {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border 0.5s;
+    z-index: 7;
+
+
+}
+
+.divHoverSmall:hover {
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: border 0.5s;
+
+}
+
+.cardHomeSmall img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.infoSmallCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: white;
+    align-items: start;
+    width: 20vw;
+
+
+
+}
+
+.infoCardDateSmall {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(94, 94, 94, 0.733);
+    margin-top: 10px;
+
+
+
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    height: 300px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 222222;
+    color: white;
+
+
+}
+
+footer h1 {
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
+}
+
+
+
+
+
+.menuFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a,
+button {
+
+    margin: 0px 10px;
+    background-color: #000000;
+    color: rgba(225, 225, 225, 0.867);
+    border: none;
+    font-size: clamp(0.8rem, 1.1vw, 0.7rem);
+    padding: 0px;
+    font-family: sottile;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer button:hover {
+    color: white;
+}
+
+
+footer button {
+    width: auto;
+    margin: 0px;
+}
+
+footer button strong {
+    color: white;
+}
+
+.containerNewleter {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.containerNewleter input {
+    background-color: transparent;
+    border: none;
+    border: 0.5px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0px 10px;
+    width: 190px;
+    transition: width 1s;
+}
+
+.containerNewleter h2 {
+    font-size: clamp(1.7rem, 1.8vw, 2rem);
+    margin: 0px;
+}
+
+.containerNewleter input::placeholder {
+    text-align: center;
+}
+
+.containerNewleter input:hover {
+    width: 220px;
+    transition: width 1s;
+}
+
+.containerSocialFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    display: none;
+}
+
+.containerSocialFooter a:hover {
+    color: white;
+
+}
+
+header h2 span {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 0px 2px;
+
+}
+
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.505);
+    text-align: start;
+
+
+}
+
+
+.boxDivImgGlass {
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+.boxDivImgGlass p {
+    text-align: center;
+    padding: 10px 60px;
+    color: white;
+    font-family: sottile;
+    padding-top: 0px;
+    font-size: clamp(0.7rem, 1.5vw, 1.0rem);
+
+}
+
+
+.buttonDivImgCat:hover {
+    border: 1px white solid;
+    padding: 10px 50px;
+    font-family: sottile;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.buttonDivImgCat {
+    border: 1px white solid;
+    padding: 10px 50px;
+    font-family: sottile;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    animation: animated-text 4s ease-out 0ms 1 normal both;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(0.7rem, 1.5vw, 1.0rem);
+    text-align: center;
+
+}
+
+
+.mainLogin {
+    display: flex;
+
+}
+
+.boxImgLogin {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2546a094954923.5e8bb6cfdaf86.gif);
+    height: 100vh;
+    width: 45%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.boxForm {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+    width: 55%;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.logoLogin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15vh;
+    margin-top: 40px;
+
+}
+
+.logoLogin a {
+    color: black;
+
+}
+
+.boxForm h3 {
+    font-size: clamp(2rem, 2.5vw, 2.2rem);
+}
+
+.boxForm input {
+    border: #000000a2 0.5px solid;
+    padding: 15px 10px;
+    animation: animated-text2 4s ease-out 0ms 1 normal both;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.047);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    width: 350px;
+    border-radius: 0px;
+    background-color: #00000000;
+
+}
+
+.boxForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.boxForm form p,
+a {
+    margin-top: 12px;
+    font-family: sottile;
+}
+
+.boxImgLogin h1 {
+    color: white;
+    margin: 20px 50px;
+}
+
+.bottomLogin {
+    border: 1px white solid;
+    padding: 10px 50px;
+    font-family: sottile;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    animation: animated-text 4s ease-out 0ms 1 normal both;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(0.8rem, 1.5vw, 1.0rem);
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: all 0.5s;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+}
+
+.boxForm div {
+    height: auto;
+}
+
+.bottomLogin:hover {
+    color: black;
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+
+.loginAncor {
+    font-weight: 600;
+    color: rgb(58, 58, 169);
+
+}
+
+
+@keyframes animated-text {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 180px;
+    }
+}
+
+
+@keyframes animated-text2 {
+
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+.social svg {
+    margin-left: 0px;
+}
+
+
+.boxGlassLogin {
+    width: 90%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+
+}
+
+.boxGlassLogin p {
+    width: 80%;
+    font-family: sottile;
+    font-size: clamp(0.7rem, 1.5vw, 1.0rem);
+    text-align: center;
+
+}
+
+
+
+/*Nav bar white*/
+.nav2White {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: solid 0.5px rgb(0, 0, 0);
+    position: fixed;
+    z-index: 34;
+    background: rgba(255, 255, 255, 0.194);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+}
+
+.containerFeautured a {
+    color: white;
+}
+
+.social a svg:hover {
+    color: rgb(144, 144, 144);
+}
+
+.nav2White h1 {
+    color: black;
+}
+
+.nav2White svg {
+    color: black;
+}
+
+.nav2White a {
+    color: black;
+}
+
+.nav2White span {
+    color: black;
+}
+
+.nav2White .social svg {
+    color: black;
+}
+
+.nav2White .centroNav {
+
+    border-left: 0.5px rgb(0, 0, 0) solid;
+    border-right: 0.5px rgb(0, 0, 0) solid;
+}
+
+.nav2White .upNav input {
+
+    color: #000000;
+}
+
+.nav2White .upNav input:hover {
+    border: 0.5px solid rgba(0, 0, 0, 0.395);
+}
+
+.nav2White input::placeholder {
+    color: rgba(0, 0, 0, 0.505);
+}
+
+.nav2White .navItem {
+    border: 0.5px solid rgb(0, 0, 0);
+
+    border-bottom: 0px solid black;
+    border-left: 0px solid black;
+
+}
+
+.nav2White .handmadeDropdown {
+    border: 0.5px black solid;
+
+}
+
+.nav2White .handmadeDropdown a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.nav2White .handmadeDropdown a {
+    color: white;
+}
+
+.nav2White #navItem {
+    border: 0.5px black solid;
+    border-bottom: 0px solid black;
+    border-left: 0px solid black;
+}
+
+.nav2White #navItem li a {
+    border-bottom: 0px solid black;
+}
+
+/*FINE NAVBAR*/
+.headerIndex {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 5vh;
+    flex-direction: column;
+
+
+}
+
+.headerIndex h2 {
+    font-size: clamp(2rem, 4vw, 3.0rem);
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.containerFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.containerSelect {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 10px 0px;
+}
+
+.containerSelect select {
+    width: 100%;
+    height: 100%;
+    color: black;
+    border: 0.5px solid black;
+    background-color: #ffffff;
+    margin: 0px;
+    margin-right: 15px;
+
+
+
+}
+
+.BoxSelect button {
+    height: 50px;
+    width: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0px 15px;
+    border: 0.5px solid black;
+    transition: background-color 0.5s;
+    margin: 10px 0px;
+
+}
+
+.BoxSelect button:hover {
+    border: 0.5px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.5s;
+
+}
+
+.containerAllCard {
+
+
+    position: relative;
+    height: 555px;
+    width: 100%;
+
+
+
+}
+
+
+
+
+
+.containerAllCard img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    object-position: top;
+
+
+}
+
+.containerDetailAllCard {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    height: auto;
+    padding-bottom: 5px;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: #ffffff;
+    box-shadow: -5px -5px 9px rgba(0, 0, 0, 0), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+.containerDetailAllCard p {
+    font-size: clamp(0.7rem, 0.6vw, 0.2rem);
+    text-align: start;
+    color: black;
+    font-family: sottile;
+}
+
+.containerDetailAllCard h4 {
+    color: black;
+    font-family: sottile;
+    text-align: start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    font-weight: 600;
+}
+
+.containerDetailAllCard h5 {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    text-align: start;
+    color: black;
+    font-family: sottile;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.mainAllCard {
+
+    width: 100%;
+    height: auto;
+    padding: 0px 30px;
+    margin-top: 100px;
+
+
+
+}
+
+.containerTagAllCard {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    height: 30px;
+}
+
+.containerTagAllCard span {
+    width: 30px;
+    margin-right: 3px;
+}
+
+
+
+.containerTagAllCard p {
+    margin: 0px;
+}
+
+.BoxSelect {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.navMobile {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 11111;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+
+
+
+.escMenuMobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerIndexCategory {
+    height: 5vh;
+}
+
+.h2Category {
+    font-size: clamp(2rem, 7vw, 4rem);
+
+
+}
+
+.boxh2Category {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 5px;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2546a094954923.5e8bb6cfdaf86.gif);
+    background-attachment: fixed;
+    height: 20vh;
+    position: relative;
+}
+
+.hoverBoxh2Category {
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sottile;
+}
+
+.Boxh2Index {
+    width: 100%;
+    height: 20vh;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2546a094954923.5e8bb6cfdaf86.gif);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+
+
+}
+
+.hoverBoxh2Index {
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sottile;
+}
+
+
+.divHoverAllCard {
+    height: 90%;
+    width: 95%;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(245, 222, 179, 0);
+    top: 0;
+    transition: border 0.5s;
+    z-index: 0;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 3%);
+
+
+
+}
+
+.divHoverAllCard:hover {
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+
+    transition: border 0.5s;
+
+}
+
+.containerMobileNav {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding-top: 40%;
+
+}
+
+.containerMobileNav a {
+    color: white;
+    font-family: sottile;
+    width: auto;
+    margin: 7px 0px;
+    font-size: clamp(0.8rem, 1.1vw, 0.7rem);
+}
+
+.containerMobileNav a:hover {
+    color: rgb(141, 141, 141);
+
+}
+
+.containerMobileNav span:hover {
+    color: rgb(141, 141, 141);
+
+}
+
+
+
+#navItemMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: clamp(0.9rem, 1.8vw, 0.8rem);
+    padding: 10px 10px;
+    border: none;
+    height: auto;
+    flex-direction: column;
+    margin: 7px 0px;
+}
+
+
+
+
+
+#navItemMobile li a {
+    color: black;
+    padding: 0px 1vw;
+    border: none;
+    font-size: clamp(0.5rem, 1.8vw, 0.8rem);
+    margin: 0px;
+    width: 50px;
+
+}
+
+#navItemMobile li {
+    width: 50px;
+}
+
+
+.handmadeDropdownMobile {
+    display: flex;
+    flex-direction: column;
+    top: 49px;
+    width: 100%;
+    display: none;
+    border-top: none;
+    transition: all 0.5s;
+
+
+}
+
+
+.containerArticleCreate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.boxPreviewArticleCreate {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 25px
+}
+
+
+
+
+.bottomFormCreateArticle {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0px 15px;
+    border: 0.5px solid black;
+    transition: background-color 0.5s;
+    margin: 10px 0px;
+}
+
+.bottomFormCreateArticle:hover {
+    border: 0.5px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.5s;
+}
+
+
+.formCreateArticle {
+    height: auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.containerFormCreateArticle {
+    width: 50%;
+
+    background-color: white;
+
+}
+
+.mainShow {
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+    padding: 50px;
+
+}
+
+.imageShow {
+    height: 100vh;
+    width: 60%;
+    background-size: cover;
+    background-position: top;
+    box-shadow: -5px -5px 9px rgba(0, 0, 0, 0), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.detailShow {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 48%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 50px;
+    justify-content: start;
+    padding-bottom: 100px;
+    box-shadow: -5px -5px 9px rgba(0, 0, 0, 0), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.detailShow h2 {
+    font-size: clamp(1.6rem, 3vw, 6rem);
+    font-family: sottile;
+    margin: 0px;
+}
+
+.detailShow p {
+    font-family: sottile;
+    font-size: clamp(0.6rem, 1vw, 2rem);
+
+
+}
+
+.detailShow .bodyShow {
+    overflow-y: scroll;
+    min-height: 50px;
+    max-height: 180px;
+    font-size: clamp(0.8rem, 1vw, 2rem);
+}
+
+
+
+.detailShow h5 {
+    font-size: clamp(0.5rem, 1vw, 0.7rem);
+    font-family: sottile;
+    color: rgba(0, 0, 0, 0.455);
+    margin-bottom: 30px;
+    margin-top: 1px;
+
+}
+
+.detailShow h4 {
+    margin: 0px;
+    font-size: clamp(0.9rem, 1vw, 0.7rem);
+}
+
+.bottomTornaIndietro {
+    height: 50px;
+    width: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0px 15px;
+    border: 0.5px solid black;
+    transition: background-color 0.5s;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+}
+
+.bottomTornaIndietro:hover {
+    border: 0.5px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.5s;
+}
+
+
+
+.bottomTornaAcetta {
+    height: 50px;
+    width: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0px 15px;
+    border: 0.5px solid black;
+    transition: background-color 0.5s;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.bottomTornaAcetta:hover {
+    border: 0.5px solid#2E7D32;
+    background-color: #2E7D32;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.5s;
+}
+
+
+.bottomTornaRifiuta {
+    height: 50px;
+    width: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 0px 15px;
+    border: 0.5px solid black;
+    transition: background-color 0.5s;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.bottomTornaRifiuta:hover {
+    border: 0.5px solid #C62828;
+    background-color: #C62828;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.5s;
+}
+
+
+
+
+
+
+.containerFormAcceptReject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contaionerWorkDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.formCareers input,
+#role,
+#message {
+    border-radius: 0px;
+}
+
+.formCareers {
+    padding-right: 20px;
+    width: 100%;
+}
+
+.workDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    text-align: start;
+    font-family: sottile;
+}
+
+.workDescription h2 {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    padding-left: 5px;
+    font-size: clamp(1rem, 1.7vw, 2.2rem);
+}
+
+.workDescription p {
+    font-size: clamp(0.8rem, 0.9vw, 1.8rem);
+    overflow-y: scroll;
+    height: 8vh;
+}
+
+.boxWorkDescription {
+    width: 55%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+
+}
+
+
+
+
+.containerFormWork {
+    width: 45%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+}
+
+.containerDashboard {
+    background-color: white;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerListDashboard {
+
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border-bottom: 0.5px solid black;
+
+
+
+
+}
+
+.containerListDashboard h6 {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sottile;
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+
+}
+
+.containerListDashboard h6:hover {
+    background-color: black;
+    color: white;
+
+}
+
+
+
+
+.containerSettingAdmin {
+
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+
+
+}
+
+.containerSettingRevisor {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.containerSettingRedator {
+    height: auto;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+#adminH6Dashboard {
+    background-color: black;
+    color: white;
+
+}
+
+#revisorH6Dashboard {
+
+    background-color: black;
+    color: white;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black
+}
+
+#revisorH6Dashboard {
+    border-left: 0.5px solid rgb(255, 255, 255);
+    border-right: 0.5px solid rgb(255, 255, 255)
+}
+
+#redatorH6Dashboard {
+    background-color: black;
+    color: white;
+}
+
+.containerListDashboard a {
+
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sottile;
+}
+
+.richiesteDashboardH6 {
+    background-color: #e9e9e9ac;
+    color: rgb(0, 0, 0);
+    font-family: sottile;
+    text-align: start;
+    padding: 10px 30px;
+    margin-bottom: 0px;
+    border-left: 0.5px solid #c9c9c993;
+    border-right: 0.5px solid #c9c9c993;
+    font-size: clamp(0.7rem, 1.2vw, 1rem);
+
+
+}
+
+.categorieDashboardH6 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    padding: 1% 3%;
+    margin-bottom: 0px;
+    font-size: clamp(0.7rem, 1.1vw, 1.5rem);
+
+}
+
+#kevin {
+    width: 100%;
+    border: 0.6px solid #c9c9c993;
+
+}
+
+#kevin td {
+    border-top: 0.5px solid #c9c9c993;
+    border-bottom: 0.5px solid #c9c9c993;
+    padding: 0px;
+
+}
+
+#kevin th {
+    width: 250px;
+}
+
+#kevin form {
+    height: 100%;
+}
+
+
+
+.attivaBottone,
+.aggiornaBottone,
+.eliminaBottone,
+.revisioneBottone {
+    border: none;
+    padding: 10px 20%;
+    width: auto;
+    color: white;
+    background-color: black;
+    transition: all 1s;
+    font-family: sottile;
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+    height: 100%;
+    margin: 0px 5px;
+    position: relative;
+
+
+}
+
+.revisioneBottone {
+    padding: 10px 20%;
+}
+
+
+.revisioneBottone:hover {
+    color: white;
+    background-color: #2E7D32;
+
+    transition: all 1s;
+
+}
+
+.attivaBottone {
+    margin: 7px 0px;
+}
+
+
+.eliminaBottone {
+    padding: 10px 3vw;
+}
+
+.attivaBottone:hover {
+    color: white;
+    background-color: #2E7D32;
+    transition: all 1s;
+
+
+}
+
+
+
+.aggiornaBottone:hover {
+    color: white;
+    background-color: #ECBD00;
+    transition: all 1s;
+
+
+
+}
+
+
+.eliminaBottone:hover {
+    color: white;
+    background-color: #C62828;
+    transition: all 1s;
+}
+
+
+.tabellaCategorie {
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.tabellaCategorie svg {
+    height: 1.7vh;
+}
+
+
+.tabellaCategorie input::placeholder {
+    font-size: clamp(0.7rem, 1vw, 0.9rem)
+}
+
+.tabellaCategorie input {
+    border-radius: 0px;
+    width: 69%;
+    border: none;
+    height: auto;
+    padding: 7.5px 10px;
+    border: 0.2px solid rgba(85, 85, 85, 0.217)
+}
+
+
+
+.formTabellaCategorie {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.spanIconAggiorna,
+.spanIconElimina {
+    display: none;
+}
+
+
+.spanIconRedattoreVisualiza {
+    display: none;
+}
+
+.spanIconRedattoreModifica {
+    display: none;
+}
+
+.spanIconRedattoreElimina {
+    display: none;
+}
+
+.divBoxButtonReddatore {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+
+
+.divBoxButtonReddatore button {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    transition: all 1s;
+}
+
+.divBoxButtonReddatore a {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5px;
+    margin: 0px;
+    color: white;
+    width: 100%;
+    transition: all 1s;
+}
+
+.divBoxButtonReddatore button:hover {
+    border-radius: 0px;
+    transition: all 1s;
+    background-color: #C62828;
+}
+
+.divBoxButtonReddatore a:hover {
+    border-radius: 0px;
+    transition: all 1s;
+}
+
+#aRedatoreVisualiza:hover {
+    background-color: #2E7D32;
+}
+
+#aRedatoreModifica:hover {
+    background-color: #ECBD00;
+}
+
+.divBoxButtonReddatore span svg {
+    height: 1.7vh;
+
+}
+
+.divBoxBotton {
+    flex: 1;
+    padding: 0.8rem;
+    width: 100%
+}
+
+#richiesteDashboardH6Hover {
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+}
+
+#richiesteDashboardH6Hover:hover {
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+}
+
+
+
+.divErrorBox {
+    color: red;
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+    margin-top: 5px;
+
+
+
+}
+
+
+.successPopup {
+    background: hsl(123, 46%, 34%);
+    height: auto;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: sottile;
+}
+
+#popSuccess span {
+    color: #C62828;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+#popDenied span {
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+
+
+.deniedPopup {
+    background-color: #C62828;
+    height: auto;
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: sottile;
+}
+
+.searchContainerMobile {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    position: fixed;
+    z-index: 11113;
+    display: none;
+
+}
+
+.searchDesktop {
+    display: none;
+}
+
+.formMobileSearch {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 30px;
+
+}
+
+.formMobileSearch form {
+    width: 80%;
+    background-color: white;
+
+
+}
+
+.formMobileSearch input {
+    width: 100%;
+    height: auto;
+    padding: 3vh 20px;
+    border: none;
+    border: 0.5px solid black;
+    border-radius: 50px;
+
+
+
+}
+
+.formMobileSearch input::placeholder {
+    color: #939393;
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-family: sottile;
+    position: relative;
+    left: 3%;
+}
+
+.searchMenuCategori {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 150px;
+    margin-top: 20px;
+}
+
+.searchMenuCategori button {
+    border: none;
+    border: 0.5px solid black;
+    padding: 10px 15px;
+    margin: 0px 5px;
+    background-color: white;
+    font-family: sottile;
+    font-size: clamp(0.7rem, 1.5vw, 1.5rem);
+    transition: background 1s;
+
+}
+
+.searchMenuCategori button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+/*Tablet*/
+@media screen and (max-width: 1124px) {
+
+    .containerSocialFooter {
+        display: flex;
+    }
+
+    .handmadeDropdown a {
+
+        font-size: 1.5vw;
+    }
+
+    .imageShow {
+        height: 70vh;
+    }
+
+    .aggiornaBottone {
+        padding: 10px 5%;
+    }
+
+
+    .logo {
+        display: none;
+    }
+
+    .Boxsocial {
+        display: none;
+    }
+
+    .logoMobile {
+        display: block;
+    }
+
+    .upNav {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    .centroNav {
+        border: none;
+    }
+
+    .test {
+        flex-direction: column;
+
+    }
+
+    .boxDivImg {
+        width: 100%;
+        position: static;
+
+    }
+
+    .boxCards {
+        width: 100%;
+    }
+
+    .imgCardLarge {
+        height: 50vh;
+    }
+
+    .containerCard1 {
+
+        margin: 0px 5px;
+
+    }
+
+    .containerCard2 {
+
+        margin: 0px 5px;
+    }
+
+    .cardHomeSmall {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .cardHomeLarge {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    #test2 {
+        flex-direction: column-reverse;
+    }
+
+    #test4 {
+        flex-direction: column-reverse;
+    }
+
+    .divImg {
+        height: 35vh;
+    }
+
+    .infoSmallCard,
+    .infoCardLarge {
+        padding: 1.5vw;
+
+    }
+
+    .infoSmallCard {
+        height: auto;
+        width: 40vw;
+
+
+    }
+
+    .infoSmallCard h4 {
+        height: auto;
+
+    }
+
+    .imgCardLarge {
+        height: 480px;
+    }
+
+    .cardHomeSmall img {
+        height: 460px;
+    }
+
+    .boxDivImg {
+        margin: 0px;
+
+    }
+
+    .boxImgLogin {
+        width: 50%;
+    }
+
+    .boxForm {
+        width: 50%;
+    }
+
+
+    .containerFilter {
+        flex-direction: column;
+    }
+
+    .divBoxBotton {
+
+        padding: 1.7rem 0.2rem;
+
+    }
+
+
+
+
+    .imgCardLarge {
+        height: 35vh;
+    }
+
+
+    .cardHomeSmall {
+
+        height: 30vh;
+    }
+
+    .cardHomeSmall img {
+        height: 30vh;
+    }
+
+    .containerAllCard {
+        height: 450px;
+    }
+
+    .divImg {
+        height: auto;
+        padding: 30px 0px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    .containerMobileNav {
+        display: none;
+    }
+
+    .navMobile {
+        background-color: transparent;
+    }
+}
+
+
+
+/*Mobile*/
+@media screen and (max-width: 700px) {
+
+
+    .searchDesktop {
+        display: block;
+    }
+
+    footer {
+        margin-top: 260px;
+    }
+
+    .boxWorkDescription {
+        padding-bottom: 0px;
+    }
+
+    .formCareers {
+        padding: 0px;
+    }
+
+    .boxWorkDescription {
+        width: 100%;
+    }
+
+    .containerFormWork {
+        width: 100%;
+    }
+
+    .formCareers {
+        padding: 20px;
+    }
+
+
+
+
+    .imageShow {
+        width: 100%;
+    }
+
+    .detailShow {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        padding: 30px;
+        padding-bottom: 10px;
+    }
+
+    .containerFormAcceptReject {
+        margin-top: 0px;
+    }
+
+    .bottomTornaIndietro {
+        margin-top: 0px;
+    }
+
+    .detailShow .bodyShow {
+        height: 70px;
+    }
+
+    .bottomTornaIndietro {
+        padding: 0px 15px;
+
+    }
+
+    .mainShow {
+        padding: 0px;
+    }
+
+
+    .containerArticleCreate {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .containerFormCreateArticle {
+        width: 100%;
+    }
+
+    .boxPreviewArticleCreate {
+        width: 100%;
+
+    }
+
+    .formCreateArticle {
+        height: auto;
+    }
+
+
+
+    .BoxNavItem {
+        display: none;
+    }
+
+    .nav2 {
+        border: none;
+        height: 75px;
+    }
+
+    .nav2White {
+        border: none;
+        height: 75px;
+
+    }
+
+
+    .menuMobile {
+        display: block;
+
+    }
+
+    .upNav input {
+        display: none;
+
+    }
+
+    .search svg {
+        display: block;
+    }
+
+    .imgCardLarge {
+        height: 35vh;
+
+    }
+
+
+    .cardHomeLarge {
+        height: auto;
+
+    }
+
+    .cardHomeSmall {
+        height: auto;
+
+    }
+
+    .divImg {
+        height: auto;
+        padding: 25px 0px;
+    }
+
+    .divImg p {
+        padding: 0px;
+    }
+
+
+    .imgCardLarge {
+        height: 280px;
+    }
+
+    .cardHomeSmall img {
+        height: 260px;
+    }
+
+    .infoSmallCard {
+        height: auto;
+        width: auto;
+    }
+
+
+    .mainLogin {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mailShow {
+        width: 100%;
+        height: auto;
+        padding: 0px 30px;
+        margin-top: 100px;
+    }
+
+    .boxImgLogin {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .boxImgLogin a {
+        width: 100%;
+        background-color: red;
+        text-align: center;
+
+    }
+
+    .logoMobileLogin {
+        width: 100%;
+        display: block;
+    }
+
+    .boxForm {
+        height: 60vh;
+    }
+
+    .boxForm h3 {
+        margin-top: 30px;
+    }
+
+    .logoLogin {
+        display: none;
+
+    }
+
+
+    @keyframes animated-text {
+
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 130px;
+        }
+    }
+
+
+
+
+    .infoCardDateLarge p,
+    .infoCardDateSmall p {
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+
+    .boxGlassLogin {
+        height: auto;
+        padding: 30px 0px;
+        margin-top: 60px;
+        width: 80%;
+    }
+
+    .containerFilter {
+        padding: 0px 50px;
+    }
+
+    .containerSelect {
+        width: 100%;
+
+
+
+    }
+
+    .headerIndex {
+        justify-content: end;
+    }
+
+    .containerFilter button {
+        padding: 12px 0px;
+        padding-bottom: 14px;
+        margin-top: 20px;
+        width: 94%;
+    }
+
+
+
+    .headerIndex h2 {
+        padding-bottom: 50px;
+    }
+
+    .containerFilter {
+        flex-direction: column;
+    }
+
+    .BoxSelect {
+        width: 100%;
+
+    }
+
+    .BoxSelect {
+        flex-direction: column;
+    }
+
+
+    .BoxSelect button {
+        width: 100%;
+    }
+
+    .containerSelect select {
+        width: 100%;
+        margin: 0px;
+    }
+
+
+
+    .headerIndex,
+    .headerIndexCategory {
+        height: 1vh;
+    }
+
+
+    .formTabellaCategorie {
+        width: 80%;
+    }
+
+
+    .spanAggiorna {
+        display: none;
+    }
+
+    .spanElimina {
+        display: none;
+    }
+
+    .spanTextRedatore {
+        display: none;
+    }
+
+
+    .spanIconRedattoreVisualiza {
+        display: block;
+        padding: 3px;
+
+
+    }
+
+    .spanIconRedattoreModifica {
+        display: block;
+        padding: 3px;
+
+
+    }
+
+    .spanIconRedattoreElimina {
+        display: block;
+        padding: 3px;
+
+
+    }
+
+    .spanIconRedattoreVisualiza:hover {
+        display: block;
+        padding: 3px;
+        background-color: #ffffff00;
+
+    }
+
+    .spanIconRedattoreModifica:hover {
+        display: block;
+        padding: 3px;
+        background-color: #ffffff00;
+
+    }
+
+    .spanIconRedattoreElimina:hover {
+        display: block;
+        padding: 3px;
+        background-color: #ffffff00;
+
+    }
+
+
+    .spanIconAggiorna {
+        display: block;
+        color: #ffffff;
+        padding: 10px;
+        background-color: black;
+        transition: all 0.5s;
+
+
+    }
+
+    .spanIconElimina {
+        display: block;
+        color: #ffffff;
+        padding: 10px;
+        background-color: black;
+        transition: all 0.5s;
+    }
+
+
+
+    .aWriter {
+        padding: 0px;
+    }
+
+
+
+    .spanIconAggiorna:hover {
+        background-color: #ECBD00;
+        color: white;
+        padding: 10px;
+        transition: all 0.5s;
+    }
+
+    .spanIconElimina:hover {
+        background-color: #C62828;
+        color: white;
+        padding: 10px;
+        transition: all 0.5s;
+    }
+
+
+    .aggiornaBottone,
+    .eliminaBottone {
+        background-color: rgba(255, 255, 255, 0);
+        padding: 0px;
+
+    }
+
+    .revisioneBottone {
+        padding: 10px 5px;
+    }
+
+    .divBoxButtonReddatore {
+        flex-direction: column;
+
+    }
+
+    .divBoxButtonReddatore a {
+        color: white;
+
+    }
+
+    .divBoxButtonReddatore button {
+
+
+        color: white;
+
+    }
+
+
+    .divBoxButtonReddatore button:hover {
+        background-color: #C62828;
+
+
+
+    }
+
+
+
+    #aRedatoreVisualiza:hover {
+        background-color: #2E7D32;
+
+    }
+
+
+    #aRedatoreModifica:hover {
+        background-color: #ECBD00;
+
+    }
+
+    .divBoxBotton {
+        padding: 0.2rem;
+    }
+
+    .imgCardLarge {
+        height: 22vh;
+    }
+
+
+    .cardHomeSmall {
+
+        height: 22vh;
+    }
+
+    .cardHomeSmall img {
+        height: 22vh;
+    }
+
+    .containerAllCard {
+        height: 350px;
+    }
+
+}

@@ -1,0 +1,813 @@
+* {
+    font-family: 'Cardo', "Hind", serif;
+margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p,
+h5,
+a,
+button {
+    font-family: 'Hind', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+@font-face {
+    font-family: "sottile";
+    src: url("/public/Font/Shree714.ttc");
+}
+
+
+
+
+header {
+    background-image: url(/public/Header.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+header p {
+    font-family: sottile;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+header h2 {
+    font-size: clamp(2rem, 5vw, 8rem);
+    color: #ffffff;
+    text-align: center;
+}
+
+.containerFeautured {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.containerFeautured H6 {
+    font-size: 12px;
+    font-family: sottile;
+    font-weight: 600;
+}
+
+.containerFeautured p {
+    font-size: 12px;
+    font-family: 'Cardo', "Hind", serif;
+    letter-spacing: 2px;
+}
+
+
+.logo h1,
+.logoMobile h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.nav2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: solid 0.5px rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 34;
+    background: rgba(0, 0, 0, 0.113);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+}
+
+.logo {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+
+}
+
+
+.centroNav {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    border-left: 0.5px rgb(255, 255, 255) solid;
+    border-right: 0.5px rgb(255, 255, 255) solid;
+}
+
+.Boxsocial {
+    flex: 1;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.social svg {
+    margin: 10px;
+    width: 30px;
+    color: #dde1e7;
+
+
+}
+
+.upNav {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dde1e7;
+
+}
+
+.upNav input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    width: 60px;
+    transition: width 1s;
+    margin: 0px 10px;
+    color: #dde1e7;
+
+}
+
+.upNav input:hover {
+
+    width: 150px;
+    transition: width 1s;
+    border: 0.5px solid rgba(255, 255, 255, 0.395);
+    padding: 0px 5px;
+    border-radius: 30px;
+
+}
+
+.BoxNavItem {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navItem svg {
+    display: none;
+
+}
+
+.navItem span {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+
+.navItem:hover span {
+    display: none;
+
+}
+
+.navItem:hover svg {
+    display: block;
+}
+
+
+.navItem:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+
+
+.BoxNavItem a:hover {
+    color: white;
+}
+
+.BoxNavItem a {
+    color: white;
+    text-decoration: none;
+}
+
+.navItem {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgb(255, 255, 255);
+    height: 100%;
+    color: #dde1e7;
+    border-bottom: 0px solid #dde1e7;
+    border-left: 0px solid #dde1e7;
+    text-align: center;
+    font-family: sottile;
+    font-size: clamp(0.5rem, 1.8vw, 0.8rem);
+    padding: 10px 10px;
+    white-space: nowrap;
+    transition: 0.1s ease-in-out;
+
+}
+
+.menuMobile {
+    display: none;
+
+}
+
+.logoMobile {
+    display: none;
+}
+
+.search {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+.test {
+    background: #f2f4f7;
+    height: auto;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0px;
+
+}
+
+.containerCard1 {
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    display: flex;
+}
+
+.containerCard2 {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0px 15px;
+}
+
+.cardHomeLarge {
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 30px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+
+.cardHomeSmall {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 30px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+
+
+.divImg {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2546a094954923.5e8bb6cfdaf86.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 30px;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: box-shadow 11s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.divImg h2 {
+
+    color: white;
+    font-size: clamp(1.6rem, 3vw, 3rem);
+
+}
+
+
+
+.boxCards {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.boxDivImg {
+    width: 40%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.imgCardLarge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-attachment: fixed;
+}
+
+.imgCardLarge {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.infoCardLarge {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    align-items: start;
+    margin-top: 20px;
+
+
+
+
+}
+
+.infoCardDateLarge {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(94, 94, 94, 0.733);
+  
+}
+
+.infoCardDateLarge p {
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+}
+
+.infoCardDateSmall p {
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+    
+}
+
+.infoCardLarge h4 {
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+    
+    text-align: start;
+    height: 50px;
+    
+
+
+
+}
+
+.infoCardDateSmall h4 {
+    font-size: clamp(1rem, 1.3vw, 1.8rem);
+    font-weight: 800;
+
+}
+
+.infoSmallCard h4{
+    font-size: clamp(0.8rem, 1.3vw, 1.8rem);
+}
+
+.categoryCard {
+    padding-right: 30px;
+    font-family: 'Cardo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.divHover {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(245, 222, 179, 0);
+    top: 0;
+    transition: border 0.5s;
+    margin-top: 20px;
+    z-index: 7;
+
+}
+
+.divHover:hover {
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: border 0.5s;
+}
+
+
+
+.divHoverSmall {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border 0.5s;
+    z-index: 7;
+
+
+}
+
+.divHoverSmall:hover {
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: border 0.5s;
+
+}
+
+.cardHomeSmall img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.infoSmallCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    background-color: white;
+    align-items: start;
+   width: 20vw;
+
+
+
+}
+
+.infoCardDateSmall {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(94, 94, 94, 0.733);
+    margin-top: 10px;
+   
+
+
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    height: 300px;
+
+
+
+
+}
+
+header h2 span {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 0px 2px;
+
+}
+
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.505);
+
+}
+
+
+.boxDivImgGlass {
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+.boxDivImgGlass p {
+    text-align: center;
+    padding: 10px 60px;
+    color: white;
+    font-family: sottile;
+    padding-top: 0px;
+    font-size: clamp(0.7rem, 1.5vw, 1.0rem);
+    
+}
+
+
+.buttonDivImgCat:hover {
+    border: 1px white solid;
+    padding: 10px 50px;
+    font-family: sottile;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.buttonDivImgCat {
+    border: 1px white solid;
+    padding: 10px 50px;
+    font-family: sottile;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    animation: animated-text 4s ease-out 0ms 1 normal both;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(0.7rem, 1.5vw, 1.0rem);
+    text-align: center;
+
+}
+
+
+
+
+
+
+@keyframes animated-text {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+
+/*Tablet*/
+@media screen and (max-width: 1124px) {
+
+    .logo {
+        display: none;
+    }
+
+    .Boxsocial {
+        display: none;
+    }
+
+    .logoMobile {
+        display: block;
+    }
+
+    .upNav {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    .centroNav {
+        border: none;
+    }
+
+    .test {
+        flex-direction: column;
+
+    }
+
+    .boxDivImg {
+        width: 100%;
+        position: static;
+
+    }
+
+    .boxCards {
+        width: 100%;
+    }
+
+    .imgCardLarge {
+        height: 50vh;
+    }
+
+    .containerCard1 {
+
+        margin: 0px 5px;
+
+    }
+
+    .containerCard2 {
+
+        margin: 0px 5px;
+    }
+
+    .cardHomeSmall {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .cardHomeLarge {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    #test2 {
+        flex-direction: column-reverse;
+    }
+
+    #test4 {
+        flex-direction: column-reverse;
+    }
+
+    .divImg {
+        height: 35vh;
+    }
+
+    .infoSmallCard,
+    .infoCardLarge {
+        padding: 1.5vw;
+    }
+
+.infoSmallCard{
+    height: auto;
+    width: 40vw;
+    
+   
+}
+
+.infoSmallCard h4{
+    height: auto;
+    
+}
+    .imgCardLarge{
+        height: 480px;
+    }
+    
+    .cardHomeSmall img{
+        height: 460px;
+    }
+
+.boxDivImg{
+    margin: 0px;
+}
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 700px) {
+    .BoxNavItem {
+        display: none;
+    }
+
+    .nav2 {
+        border: none;
+        height: 75px;
+    }
+
+    .menuMobile {
+        display: block;
+
+    }
+
+    .upNav input {
+        display: none;
+
+    }
+
+    .search svg {
+        display: block;
+    }
+
+    .imgCardLarge {
+        height: 35vh;
+
+    }
+
+
+    .cardHomeLarge {
+        height: auto;
+
+    }
+
+    .cardHomeSmall {
+        height: auto;
+
+    }
+
+    .divImg {
+        height: 25vh;
+    }
+
+    .divImg p {
+        padding: 0px;
+    }
+
+
+.imgCardLarge{
+    height: 280px;
+}
+
+.cardHomeSmall img{
+    height: 260px;
+}
+
+.infoSmallCard{
+    height: auto;
+    width: auto;
+}
+
+
+
+
+
+@keyframes animated-text {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 130px;
+    }
+}
+
+
+
+
+.infoCardDateLarge p, .infoCardDateSmall p{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+}
+
+
+
